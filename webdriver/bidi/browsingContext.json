@@ -2414,7 +2414,14 @@
                 "firefox": {
                   "version_added": "123",
                   "partial_implementation": true,
-                  "notes": "Only supports `css` and `xpath` locators since Firefox 123, and `accessibility` locators since Firefox 127. Does not yet support `context` and `innerText` locators."
+                  "notes": [
+                    "Unsupported locators:",
+                    "- `innerText`",
+                    "Supported locators:",
+                    "- `css` and `xpath` in Firefox 123",
+                    "- `accessibility` in Firefox 127",
+                    "- `context` in Firefox 146"
+                  ]
                 },
                 "firefox_android": "mirror",
                 "oculus": "mirror",
